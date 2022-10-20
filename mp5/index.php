@@ -1,12 +1,10 @@
 <?php   
-    $output = "test";
+    $output = "";
     if(isset($_POST['createFile']) && !empty($_POST['name']) && !empty($_POST['filecontent'] )) {
         require_once 'directories.php';
         $createDir = new Directories();
         $output = $createDir->Create($_POST['name'], $_POST['filecontent']);
     }
-    else 
-        echo "what"
 ?>
 <!DOCTYPE html>
 <html lang="en">
