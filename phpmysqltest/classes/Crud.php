@@ -1,5 +1,5 @@
 <?php
-require_once 'PdoMethods.php';
+require_once './classes/PdoMethods.php';
 class Crud {
 
     public function getCustomers(){
